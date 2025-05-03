@@ -8,7 +8,7 @@ const AddProject = () => {
     if (!title.trim()) return;
     console.log(title);
     const response = await fetch(
-      "http://localhost:3000/api/v1/projects/create",
+      "https://task-tracker-890.up.railway.app/api/v1/projects/create",
       {
         method: "POST",
         headers: {

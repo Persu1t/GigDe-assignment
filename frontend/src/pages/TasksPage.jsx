@@ -13,7 +13,7 @@ const TasksPage = () => {
   useEffect(() => {
     const fetchTasks = async () => {
       const response = await fetch(
-        `http://localhost:3000/api/v1/tasks/get-tasks/${id}`,
+        `https://task-tracker-890.up.railway.app/api/v1/tasks/get-tasks/${id}`,
         {
           method: "GET",
           headers: {
@@ -34,7 +34,7 @@ const TasksPage = () => {
 
   const handleDelete = async (taskId) => {
     const response = await fetch(
-      `http://localhost:3000/api/v1/tasks/delete-task/${taskId}`,
+      `https://task-tracker-890.up.railway.app/api/v1/tasks/delete-task/${taskId}`,
       {
         method: "DELETE",
         headers: {
@@ -54,7 +54,7 @@ const TasksPage = () => {
 
   const handleMarkDone = async (taskId) => {
     const response = await fetch(
-      `http://localhost:3000/api/v1/tasks/update-task/${taskId}`,
+      `https://task-tracker-890.up.railway.app/api/v1/tasks/update-task/${taskId}`,
       {
         method: "PUT",
         headers: {
@@ -80,7 +80,7 @@ const TasksPage = () => {
 
   const handleEdit = async (taskId) => {
     const response = await fetch(
-      `http://localhost:3000/api/v1/tasks/get-task/${taskId}`,
+      `https://task-tracker-890.up.railway.app/api/v1/tasks/get-task/${taskId}`,
       {
         method: "GET",
         headers: {
@@ -100,7 +100,7 @@ const TasksPage = () => {
 
   const handleMarkInProgress = async (taskId) => {
     const response = await fetch(
-      `http://localhost:3000/api/v1/tasks/update-task/${taskId}`,
+      `https://task-tracker-890.up.railway.app/api/v1/tasks/update-task/${taskId}`,
       {
         method: "PUT",
         headers: {

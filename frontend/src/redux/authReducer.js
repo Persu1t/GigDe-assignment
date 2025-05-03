@@ -8,7 +8,7 @@ const initialState = {
 
 export const register = createAsyncThunk("auth/register", async (userData, thunkAPI) => {
     try {
-        const res = await fetch("http://localhost:3000/api/v1/auth/register", {
+        const res = await fetch("https://task-tracker-890.up.railway.app/api/v1/auth/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -32,7 +32,7 @@ export const register = createAsyncThunk("auth/register", async (userData, thunk
 
 export const login = createAsyncThunk("auth/login", async (userData, thunkAPI) => {
     try {
-        const res = await fetch("http://localhost:3000/api/v1/auth/login", {
+        const res = await fetch("https://task-tracker-890.up.railway.app/api/v1/auth/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -55,7 +55,7 @@ export const login = createAsyncThunk("auth/login", async (userData, thunkAPI) =
 
 export const getCurrentUser = createAsyncThunk("auth/getCurrentUser", async (_, thunkAPI) => {
     try {
-        const res = await fetch("http://localhost:3000/api/v1/auth/user", {
+        const res = await fetch("https://task-tracker-890.up.railway.app/api/v1/auth/user", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",

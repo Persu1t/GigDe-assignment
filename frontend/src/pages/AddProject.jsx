@@ -11,7 +11,7 @@ const AddProject = () => {
     const fetchProjects = async () => {
       try {
         const response = await fetch(
-          "http://localhost:3000/api/v1/projects/get-projects",
+          "https://task-tracker-890.up.railway.app/api/v1/projects/get-projects",
           {
             method: "GET",
             headers: {
@@ -36,7 +36,7 @@ const AddProject = () => {
   const handleClick = async (projectId) => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/v1/projects/delete-project/${projectId}`,
+        `https://task-tracker-890.up.railway.app/api/v1/projects/delete-project/${projectId}`,
         {
           method: "DELETE",
           headers: {

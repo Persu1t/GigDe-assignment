@@ -18,7 +18,7 @@ const TaskForm = ({ id, setForEditing, taskToBeEdited }) => {
     console.log(title, description);
     if (setForEditing) {
       const response = await fetch(
-        `http://localhost:3000/api/v1/tasks/update-task/${taskToBeEdited._id}`,
+        `https://task-tracker-890.up.railway.app/api/v1/tasks/update-task/${taskToBeEdited._id}`,
         {
           method: "PUT",
           headers: {
@@ -44,7 +44,7 @@ const TaskForm = ({ id, setForEditing, taskToBeEdited }) => {
       }
     } else {
       const response = await fetch(
-        "http://localhost:3000/api/v1/tasks/create-task",
+        "https://task-tracker-890.up.railway.app/api/v1/tasks/create-task",
         {
           method: "POST",
           headers: {
