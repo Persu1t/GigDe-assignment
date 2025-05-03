@@ -2,6 +2,8 @@
 
 A full-stack task management app built with React (Vite), Express.js, MongoDB, and JWT-based authentication.
 
+**Backend Hosted Url: https://task-tracker-890.up.railway.app/**
+
 ---
 
 ## 📁 Folder Structure
