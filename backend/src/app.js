@@ -7,7 +7,7 @@ const app = express();
 
 app.use(
     cors({
-        origin: "http://localhost:5173",
+        origin: "https://task-tracker-eta-eight.vercel.app/",
         credentials: true,
     })
 );
